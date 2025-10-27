@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+   color: #fff;
+    font-family:  sans-serif;
+}
+body{
+    background: #001 ;
+    display:flex; /* to make the profile and menu in one line */
+}  
+.profile{
+    display: flex; /* to make the profile and menu in one line */
+align-items: center; /* to align the profile and menu vertically */
+gap: 30px; /* to add space between profile and menu */
+
+
+   
+} 
+.profile h2{
+    font-size: 20px; /* to make the text bigger */
+  text-transform: capitalize; /* to make the text uppercase */
+
+}
+.img-box{
+    width:50px;
+    height: 50px;
+    overflow: hidden; /* to hide the overflow of the image */
+      border-radius: 50%; /* to make the image circular */
+border:3px solid #fff;
+flex-shrink: 0; /* to prevent the image from shrinking */
+}
+.img-box img{
+    width: 100%;
+   object-fit: cover; /* to make the image cover the box */
+
+}
+.menu{
+background:#123;
+    width: 50px;
+   height: 100vh;  /*  to make the menu full height  */ 
+padding: 20px;
+overflow: hidden; /* to hide the overflow of the menu */  
+transition: 0.5s; /* to make the hover effect smooth */
+
+}
+.menu:hover{
+    width: 260px; /* to make the menu wider on hover */
+    
+}
+.menu ul{
+    list-style: none;
+    position: relative; /*to make menu as parent of the list */
+    height: 95%; /* to make the menu full height */
+}
+.menu ul li a{
+    
+    text-decoration: none;
+    align-items: center; 
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    /* background: green;  */
+    /* you can remove this line if you want no background */
+     display: flex; /* to make the icon and text in one line */
+     gap: 40px; /* to add space between icon and text */
+     transition: 0.5s; /* to make the hover effect smooth */
+}
+.menu ul li a:hover , .active ,.data-info .box:hover,td:hover{
+    background: #ffffff55; /* change the background color on hover */
+}
+.log-out{
+    position: absolute; /* to make the log-out button at the bottom */
+
+    bottom: 0; /* to make the log-out button at the bottom */
+    width: 100%; /* to make the log-out button full width */
+    background:;
+    border-radius: 5px; 
+
+}
+.log-out a{
+background:#a00;
+
+}
+ul li a i{
+font-size: 30px; /* to make the icon bigger */
+
+}
+.content{ 
+    width:100%;
+    margin:10px
+}
+.title-info{
+    background:#0481ff;
+    padding: 10px;
+    display:flex;
+    align-items: center; /* to align the title and icon vertically */
+    justify-content: space-between; /* to space out the title and icon */   
+border-radius: 8px; /* to make the title box rounded */
+    margin: 10px 0; /* to add space around the title box */
+}
+.data-info{
+    display: flex; /* to make the data in one line */
+    align-items: center; /* to align the data vertically */
+    justify-content: space-between; /* to space out the data */
+    flex-wrap: wrap; /* to wrap the data if it overflows */
+    gap: 10px; /* to add space between data */
+}
+
+.data-info .box {
+    background-color:#123;
+    height:150px; /* to make the box height */
+    flex-basis:250px; /* to make the box width */
+    flex-grow: 1; /* to make the box grow */
+    border-radius: 8px; /* to make the box rounded */
+    display:flex;
+    align-items: center; /* to align the content vertically */
+justify-content:space-around; /* to space out the content */
+
+}
+
+.data-info .box i{
+    font-size: 40px; /* to make the icon bigger */
+}
+
+.data-info .box .data{
+    text-align: center; /* to center the text */
+}
+.data-info .box .data span{
+       font-size: 30px; /* to make the icon bigger */
+}
+table{
+    width: 100%;
+ text-align: center; /* to center the text */
+ border-spacing:8px /* to add space between the table cells */
+
+}
+td,th{
+    background-color: #123; /* to make the table background color */
+height: 40px; /* to make the table row height */
+   border-radius:8px;
+}
+th{
+    background-color: #0481ff ; /* to make the table header background color */
+
+}
+.price ,.count{
+    padding:6px;
+    border-radius: 6px; /* to make the input rounded */
+}
+.price{
+    background-color:green; /* to make the input background color */
+}
+.count{
+    background-color:gold; 
+    color: black; /* to make the input background color */}
+    
